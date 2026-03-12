@@ -2,41 +2,39 @@
 
 ## Overview
 
-This project demonstrates semantic search using vector embeddings and the Endee vector database.
+This project demonstrates a semantic search system built using embeddings and the Endee Vector Database.
 
-The system stores resume text as embeddings and retrieves the most relevant resume based on search query.
+The system converts resume text into vector embeddings and stores them in a vector database.  
+When a search query is given, the system finds the most similar resume using vector similarity search.
+
+This project shows how vector databases can be used in AI applications such as semantic search, recommendation systems, and RAG pipelines.
+
 
 ## Features
 
-- Resume embedding generation
+- Resume embedding generation using Sentence Transformers
 - Vector similarity search
 - Endee vector database integration
-- Semantic search
-- AI / NLP based retrieval
+- Semantic search based retrieval
+- AI / NLP based matching
 
-## Tech stack
 
-Python
-Sentence Transformers
-Endee Vector DB
-NumPy
+## Tech Stack
+
+- Python
+- Sentence Transformers
+- NumPy
+- Endee Vector Database
+- GitHub
+
 
 ## How it works
 
-1. Convert resumes into embeddings
-2. Store embeddings in vector database
-3. Convert search query to embedding
-4. Find closest vector
-5. Return best resume
+1. Resume text files are converted into embeddings
+2. Embeddings are stored in the vector database
+3. Search query is converted into embedding
+4. Vector similarity search is performed
+5. Most relevant resume is returned
 
-## Setup
 
-pip install -r requirements.txt
-
-python embed.py
-
-python search.py
-
-## Endee Usage
-
-This project uses the Endee vector database as the backend for similarity search.
+## Project Structure
