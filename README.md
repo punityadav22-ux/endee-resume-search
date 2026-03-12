@@ -28,6 +28,17 @@ This project shows how vector databases can be used in AI applications such as s
 - GitHub
 
 
+## AI Infrastructure Usage
+
+This project demonstrates usage of modern AI infrastructure including:
+
+- Vector database (Endee)
+- Embedding models
+- Semantic search
+- API based retrieval system
+
+Such architecture is commonly used in large-scale AI applications.
+
 ## How it works
 
 1. Resume text files are converted into embeddings
@@ -38,3 +49,32 @@ This project shows how vector databases can be used in AI applications such as s
 
 
 ## Project Structure
+
+
+## Architecture
+
+This project follows a production-style AI retrieval architecture.
+
+1. Text data is converted into embeddings using Sentence Transformers
+2. Embeddings are stored in a vector database (Endee)
+3. Query is converted into embedding
+4. Vector similarity search is performed
+5. Best match is returned through API
+
+This design is similar to real-world AI systems used in semantic search,
+recommendation engines, and Retrieval-Augmented Generation (RAG) pipelines.
+
+
+## Endee Integration
+
+The project uses the official Endee vector database repository as required.
+
+Steps followed:
+
+- Starred official Endee repository
+- Forked repository
+- Used fork as base for project
+- Built semantic search system using vector embeddings
+
+Endee GitHub:
+https://github.com/endee-io/endee
